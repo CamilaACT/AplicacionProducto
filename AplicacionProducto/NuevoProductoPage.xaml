@@ -3,10 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplicacionProducto.NuevoProductoPage"
              Title="NuevoProductoPage">
+    
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Ingrese los datos pra un nuevo producto">
+                    <EntryCell x:Name="Nombre"
+                               Placeholder="Nombre" />
+                    <EntryCell x:Name="cantidad"
+                               Placeholder="cantidad"
+                               Keyboard="Numeric" />
+                    <EntryCell x:Name="Descripcion"
+                               Placeholder="Descripcion" />
+                    
+                </TableSection>
+               
+            </TableRoot>
+        </TableView>
+        <Button x:Name="CounterBtn"
+                Text="Nuevo Producto"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Clicked="OnclickGuardarProducto" />
     </VerticalStackLayout>
+    
 </ContentPage>
