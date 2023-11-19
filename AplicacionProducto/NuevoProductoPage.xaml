@@ -7,7 +7,7 @@
     <VerticalStackLayout>
         <TableView>
             <TableRoot>
-                <TableSection Title="Ingrese los datos pra un nuevo producto">
+                <TableSection Title="Ingrese los datos para un nuevo producto">
                     <EntryCell x:Name="Nombre"
                                Placeholder="Nombre" />
                     <EntryCell x:Name="cantidad"

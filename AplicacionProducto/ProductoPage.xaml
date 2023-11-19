@@ -25,7 +25,8 @@
                 FontSize="20"
                 HorizontalOptions="Center" 
                 Clicked="OnclickNuevoProducto"/>
-        <ListView x:Name="listaProductos" RowHeight="80">
+        <ListView x:Name="listaProductos" RowHeight="80"
+                  ItemSelected="OnClickShowDetails">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
